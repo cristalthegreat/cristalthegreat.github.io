@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Learning Activity 5</title>
+ </head>
+ <body>
+  <form action="/action_page.php" method="post">
+  <fieldset>
+  <table>
+   <tr>
+   <td align="right"><label for="name">Name:</label></td>
+   <td><input type="text" id="name"name="Name"><br></td></tr>
+   <tr><td align="right"><label for="email">Email:</label></td>
+   <td><input type="text" id="email"name="Email"><br></td>
+   <tr><td align="right"><label for="address">Address:</label></td>
+   <td><textarea id="address"  name="address" rows="5" col="20" style="overflow-y:scroll;">
+   </textarea><br></tr>
+   <tr><td align="right"><label for="postcode">Postcode:</label></td>
+   <td><input type="text" id="postcode" name="Postcode" size="10"><br></td></tr></table><br><br>
+  <table border="1">
+   <tr>
+    <th align="left">Product</th>
+    <th align="left">Part Number</th>
+    <th align="left">Quantity</th>
+    <th align="left">Unit Price</th>
+    <th align="left">Subtotal</th>
+   </tr>
+   <tr>
+    <td>Econobox</td>
+    <td>LB100</td>
+    <td><input type="text" size="6" id="quantity"name="Quantity"></td>
+    <td>R5</td>
+    <td><input type="text" size="15" id="subtotal"name="Subtotal"></td>
+   </tr>
+   <tr>
+    <td>Standardbox</td>
+    <td>LB200</td>
+    <td><input type="text" size="6" id="quantity"name="Quantity"></td>
+    <td>R10</td>
+    <td><input type="text" size="15" id="subtotal"name="Subtotal"></td>
+   </tr>
+   <tr>
+    <td>Premium Box/TD></td>
+    <td>LB300</td>
+    <td><input type="text" size="6" id="quantity"name="Quantity"></td>
+    <td>R15</td>
+    <td><input type="text" size="15" id="subtotal"name="Subtotal" ></td>
+   </tr>
+   <tr>
+    <td>Deluxe Box/TD></td>
+    <td>LB400</td>
+    <td><input type="text" size="6" id="quantity"name="Quantity"></td>
+    <td>R20</td>
+    <td><input type="text" size="15" id="subtotal"name="Subtotal"></td>
+   </tr>
+   <tr>
+    <td>Super Deluxe Box/TD></td>
+    <td>LB500</td>
+    <td><input type="text" size="6" id="quantity"name="Quantity"></td>
+    <td>R30</td>
+    <td><input type="text" size="15" id="subtotal"name="Subtotal"></td>
+   </tr>
+   <tr>
+    <td colspan="5" align="right"> <label for="total">Total:</label>
+    <input type="text" size="15" id="total" name="Total"></td></tr></table><br><br>
+   <p><b>Credit Card Details</b></p>
+   <label for="card">Card Type:</label><br>
+  <table>
+   <tr>
+   <td><input type="radio" id="mcard" name="card" value="Mastercard">
+   <label for="mcard">Mastercard</label><br></td>
+   <td><label for="cardnum">Card Number:</label> 
+   <input type="text" id="cardnum" name="cardnum"></td>
+   </tr>
+   <tr>
+   <td><input type="radio" id="visa" name="card" value="Visa">
+   <label for="visa">Visa</label><br></td>
+   <td><label for="expdate">Expiry Date:</label> &nbsp;
+   <input type="text" id="expdate" name="expdate" size="8"></td>
+   </tr>
+   <tr>
+   <td><input type="radio" id="aexp" name="card" value="American Express">
+   <label for="aexp">American Express</label><br></td></tr>
+   <tr>
+   <td><input type="radio" id="dclub" name="card" value="Diners Club">
+   <label for="dclub">Diners Club</label></td>
+   </tr>
+  </table>
+  <br><br>
+  <table>
+   <tr>
+   <td><label for="address"><b>Delivery Address:<b></label></td>
+   <td><textarea id="address" name="address" rows="5" col="20" style="overflow-y:scroll;">
+   </textarea><br></td>
+   </tr>
+  </table>
+   <br><br>
+   <td><input type="submit" value="Send order"></td>
+   <td><input type="reset" value="Clear form"></td>
+  </fieldset> 
+  </form>
+  <p align="right"><button onclick="history.back()">Back</button></p>
+ </body>
+</html>
