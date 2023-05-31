@@ -3,28 +3,40 @@
  <head>
   <meta charset="utf-8">
   <title>Learning Activity 5</title>
+  <link href="minimal-table.css" rel="stylesheet" type="text/css">
+  <style>
+  html {font-family: sans-serif;}
+  table {border-collapse: collapse;border: 2px solid rgb(0,0,0);letter-spacing: 1px;font-size: 0.8rem;}
+  td, th {border: 1px solid rgb(0,0,0);padding: 10px 20px;}
+  th {background-color: rgb(235,235,235);}
+  td {text-align: left;}tr:nth-child(even) 
+  td {background-color: rgb(250,250,250);}
+  tr:nth-child(odd) 
+  td {background-color: rgb(245,245,245);}
+  caption {padding: 10px;}
+  </style>
  </head>
  <body>
   <form action="/action_page.php" method="post">
   <fieldset>
   <table>
    <tr>
-   <td align="right"><label for="name">Name:</label></td>
+   <td><label for="name">Name:</label></td>
    <td><input type="text" id="name"name="Name"><br></td></tr>
-   <tr><td align="right"><label for="email">Email:</label></td>
+   <tr><td><label for="email">Email:</label></td>
    <td><input type="text" id="email"name="Email"><br></td>
-   <tr><td align="right"><label for="address">Address:</label></td>
+   <tr><td><label for="address">Address:</label></td>
    <td><textarea id="address"  name="address" rows="5" col="20" style="overflow-y:scroll;">
    </textarea><br></tr>
-   <tr><td align="right"><label for="postcode">Postcode:</label></td>
+   <tr><td><label for="postcode">Postcode:</label></td>
    <td><input type="text" id="postcode" name="Postcode" size="10"><br></td></tr></table><br><br>
-  <table border="1">
+  <table>
    <tr>
-    <th align="left">Product</th>
-    <th align="left">Part Number</th>
-    <th align="left">Quantity</th>
-    <th align="left">Unit Price</th>
-    <th align="left">Subtotal</th>
+    <th>Product</th>
+    <th>Part Number</th>
+    <th>Quantity</th>
+    <th>Unit Price</th>
+    <th>Subtotal</th>
    </tr>
    <tr>
     <td>Econobox</td>
